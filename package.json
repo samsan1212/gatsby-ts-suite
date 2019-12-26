@@ -1,47 +1,79 @@
 {
-  "name": "gatsby-starter-styled-ts",
+  "name": "gatsby-styled-ts-starter",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby, Typescript, Styled-Components",
+  "description": "A Gatsby starter for typescript and styled-components",
   "version": "0.1.0",
-  "author": "Sam Chan <samchan148@gmail.com>",
+  "author": "Sam TS Chan",
+  "license": "MIT",
   "dependencies": {
-    "gatsby": "^2.17.4",
-    "gatsby-image": "^2.2.29",
-    "gatsby-plugin-manifest": "^2.2.23",
-    "gatsby-plugin-offline": "^3.0.16",
-    "gatsby-plugin-react-helmet": "^3.1.13",
-    "gatsby-plugin-sharp": "^2.2.32",
-    "gatsby-source-filesystem": "^2.1.33",
-    "gatsby-transformer-sharp": "^2.3.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
+    "@reach/router": "^1.2.1",
+    "axios": "^0.19.0",
+    "memoize-one": "^5.1.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
-    "styled-components": "^4.4.0",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-observable": "^1.2.0",
+    "rxjs": "^6.5.3",
+    "styled-components": "^4.4.1",
+    "styled-reset": "^4.0.3",
+    "swiper": "^5.2.1",
     "tslib": "^1.10.0",
-    "tslint": "^5.20.0",
-    "typescript": "^3.6.4"
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "@types/jest": "^24.0.17",
+    "@types/node": "^12.12.21",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-helmet": "^5.0.14",
+    "@types/react-redux": "^7.1.5",
+    "@types/reactstrap": "^8.2.0",
+    "@types/styled-components": "^4.4.0",
+    "@types/swiper": "^5.2.0",
+    "@types/uuid": "^3.4.6",
+    "babel-plugin-styled-components": "^1.10.6",
+    "gatsby": "^2.18.12",
+    "gatsby-image": "^2.2.34",
+    "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-manifest": "^2.2.31",
+    "gatsby-plugin-offline": "^3.0.27",
+    "gatsby-plugin-postcss": "^2.1.18",
+    "gatsby-plugin-react-helmet": "^3.1.16",
+    "gatsby-plugin-sass": "^2.1.26",
+    "gatsby-plugin-sharp": "^2.3.5",
+    "gatsby-plugin-styled-components": "^3.1.16",
+    "gatsby-plugin-tslint": "^0.0.2",
+    "gatsby-plugin-typescript": "^2.1.23",
+    "gatsby-source-filesystem": "^2.1.40",
+    "gatsby-transformer-sharp": "^2.3.7",
+    "node-sass": "^4.13.0",
+    "prettier": "^1.19.1",
+    "rxjs-tslint": "^0.1.7",
+    "sass-loader": "^8.0.0",
+    "ts-loader": "^6.2.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-loader": "^3.5.4",
+    "tslint-plugin-prettier": "^2.1.0",
+    "tslint-react": "^4.1.0",
+    "typescript": "^3.7.4"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "yarn run type-check && yarn run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "clean": "gatsby clean",
+    "type-check": "tsc --noEmit",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/samsan1212/gatsby-starter-styled-ts"
-  },
-  "bugs": {
-    "url": "https://github.com/samsan1212/gatsby-starter-styled-ts/issues"
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

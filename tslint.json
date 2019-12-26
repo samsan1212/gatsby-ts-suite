@@ -1,0 +1,54 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:latest",
+        "tslint-react"
+    ],
+    "jsRules": {},
+    "rules": {
+        "indent": [
+            true,
+            "spaces",
+            4
+        ],
+        "rxjs-collapse-imports": true,
+        "rxjs-pipeable-operators-only": true,
+        "rxjs-no-static-observable-methods": true,
+        "rxjs-proper-imports": true,
+        "jsx-no-lambda": true,
+        "jsx-alignment": true,
+        "jsx-wrap-multiline": true,
+        "jsx-self-close": true,
+        "jsx-no-bind": true,
+        "jsx-no-string-ref": true,
+        "jsx-equals-spacing": [
+            true,
+            "never"
+        ],
+        "jsx-curly-spacing": [
+            true,
+            "never"
+        ],
+        "jsx-boolean-value": [
+            true,
+            "never"
+        ],
+        "jsx-key": true,
+        "jsx-no-multiline-js": false,
+        "jsx-space-before-trailing-slash": true,
+        "no-submodule-imports": false,
+        "no-implicit-dependencies": false,
+        "interface-name": false,
+        "max-line-length": false,
+        "object-literal-sort-keys": false,
+        "no-console": false,
+        "quotemark": [
+            true,
+            "double",
+            "jsx-double"
+        ]
+    },
+    "rulesDirectory": [
+        "node_modules/rxjs-tslint"
+    ]
+}
