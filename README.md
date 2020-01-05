@@ -54,7 +54,10 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── gatsby-ssr.js
     ├── LICENSE
     ├── package.json
-    └── README.md
+    ├── postcss.config.js
+    ├── README.md
+    ├── tsconfig.json
+    └── tslint.json
 
 1. **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
@@ -64,7 +67,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 4. **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
-5. **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+5. **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser. **A redux store initiation can be found in this file.**
 
 6. **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
 
@@ -78,7 +81,19 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+12. **`postcss.config.js`**: This file is where `gatsby-plugin-postcss` expects to find the config to [post-process the CSS](https://www.gatsbyjs.org/packages/gatsby-plugin-postcss/).
+
+13. **`README.md`**: A text file containing useful reference information about your project.
+
+14. **`tsconfig.json`**: This file is where **Typescript** transpiler expects to find the configurations of Typescript transpilation.
+
+15. **`tslint.json`**: This file is where **tslint** expects to find the rules of Typescript lint.
+
+16. **`yarn.lock`** (See `package.json` above, first). If you are using `yarn`, this is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+
+## 📓 To **Yarn** lover
+
+If you are going to use `yarn` instead of `npm`, please update the node script, **`start`**, in the `package.json`.
 
 ## 🎓 Learning Gatsby
 
@@ -90,4 +105,4 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/samsan1212/gatsby-styled-ts-starter)
