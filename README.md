@@ -91,7 +91,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 16. **`yarn.lock`** (See `package.json` above, first). If you are using `yarn`, this is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-## 📓 To **Yarn** lover
+## 🐱 To **Yarn** lover
 
 If you are going to use `yarn` instead of `npm`, please update the node script, **`start`**, in the `package.json`.
 
