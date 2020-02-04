@@ -1,1 +1,5 @@
-export const SET_ACTION = "SET_ACTION";
+import { getActionType } from "@/redux/helper";
+
+const type = getActionType("");
+
+export const SET_ACTION = type("SET_ACTION");

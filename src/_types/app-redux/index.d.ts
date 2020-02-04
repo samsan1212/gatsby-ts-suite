@@ -9,9 +9,6 @@ declare global {
     payload: T;
   }
 
-  type AppActionCreator = () => Action<string>;
-  type AppActionCreatorWithPayload<T = any> = (payload: T) => AppAction<T>;
-
   type ReduxStore = Readonly<Store>
 
 }

@@ -1,7 +1,4 @@
+import { actionCreator } from "@/redux/helper"
 import { SET_ACTION } from "./type/types";
 
-export const setAction = () => {
-    return {
-        type: SET_ACTION,
-    };
-};
+export const setAction = actionCreator<number>(SET_ACTION);

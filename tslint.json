@@ -11,10 +11,6 @@
             "spaces",
             4
         ],
-        "rxjs-collapse-imports": true,
-        "rxjs-pipeable-operators-only": true,
-        "rxjs-no-static-observable-methods": true,
-        "rxjs-proper-imports": true,
         "jsx-no-lambda": true,
         "jsx-alignment": true,
         "jsx-wrap-multiline": true,
@@ -47,8 +43,5 @@
             "double",
             "jsx-double"
         ]
-    },
-    "rulesDirectory": [
-        "node_modules/rxjs-tslint"
-    ]
+    }
 }
