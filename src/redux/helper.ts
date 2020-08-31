@@ -1,6 +1,6 @@
 import { Reducer, ActionCreator } from "redux";
 
-export function createReducer<T>(type: string, defaultValue: T): Reducer<T, AppAction<T>> {
+export function toReducer<T>(type: string, defaultValue: T): Reducer<T, AppAction<T>> {
     return (state = defaultValue, action) => {
         if (action && action.type === type) {
             return action.payload;
@@ -9,8 +9,8 @@ export function createReducer<T>(type: string, defaultValue: T): Reducer<T, AppA
     };
 }
 
-export function actionCreator<T = {}>(type: string): ActionCreator<AppAction<T>> {
+export function toActionCreator<T = {}>(type: string): ActionCreator<AppAction<T>> {
     return (payload: T = ({} as any)) => ({ type, payload });
 }
 
-export const getActionType = (prefix: string) => (actionName: string) => `${prefix}::${actionName}`;
+export const toType = (prefix: string) => (actionName: string) => `${prefix}::${actionName}`;

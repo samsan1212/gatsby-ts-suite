@@ -14,7 +14,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-postcss`,
-    `gatsby-plugin-tslint`,
+    `gatsby-plugin-eslint`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,
@@ -45,4 +45,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-};
+}

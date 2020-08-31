@@ -1,5 +1,5 @@
-import { getActionType } from "@/redux/helper";
+import { toType } from "@/redux/helper";
 
-const type = getActionType("");
+const type = toType("");
 
 export const SET_ACTION = type("SET_ACTION");
