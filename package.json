@@ -13,6 +13,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "type-check": "tsc --noEmit",
+    "type-check:watch": "tsc --noEmit --watch",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
@@ -39,7 +40,6 @@
     "gatsby-plugin-sass": "2.3.12",
     "gatsby-plugin-sharp": "2.6.30",
     "gatsby-plugin-styled-components": "3.3.10",
-    "gatsby-plugin-typescript": "2.4.18",
     "gatsby-source-filesystem": "2.3.27",
     "gatsby-transformer-sharp": "2.5.13",
     "jest-environment-jsdom-sixteen": "^1.0.3",
