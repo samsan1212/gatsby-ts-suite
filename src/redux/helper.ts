@@ -2,7 +2,7 @@ import { Reducer, ActionCreator, Action } from "redux";
 
 export function toReducer<T>(type: string, defaultValue: T): Reducer<T, AppAction<T>> {
     return (state = defaultValue, action) => {
-        if (action && action.type === type && action.payload) {
+        if (action && action.type === type) {
             return action.payload;
         }
         return state;
