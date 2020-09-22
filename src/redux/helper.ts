@@ -1,4 +1,5 @@
-import { Reducer, ActionCreator, Action } from "redux";
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+import { Reducer } from "redux";
 
 export function toReducer<T>(type: string, defaultValue: T): Reducer<T, AppAction<T>> {
     return (state = defaultValue, action) => {
@@ -9,8 +10,8 @@ export function toReducer<T>(type: string, defaultValue: T): Reducer<T, AppActio
     };
 }
 
-export function toActionCreator(type: string, noPayload: true): ActionCreator<Action<string>>
-export function toActionCreator<T>(type: string): ActionCreator<AppAction<T>>
+export function toActionCreator<T = undefined>(type: string, noPayload: true): AppActionCreatorWithoutPayload
+export function toActionCreator<T>(type: string, noPayload?: false): AppActionCreator<T>
 export function toActionCreator<T>(type: string, noPayload = false) {
     if (noPayload) {
         return () => ({ type })

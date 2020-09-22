@@ -5,7 +5,15 @@ import { Store } from "./store";
 
 declare global {
 
-  interface AppAction<T = any> extends Action<string> {
+  interface AppActionCreator<T> {
+    (payload: T): AppAction<T>
+  }
+
+  interface AppActionCreatorWithoutPayload {
+    (): Action<string>
+  }
+
+  interface AppAction<T = unknown> extends Action<string> {
     payload: T;
   }
 
