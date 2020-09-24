@@ -1,3 +1,7 @@
 gatsby-config.js
 .eslintrc.js
 postcss.config.js
+jest.config.js
+jest-preprocess.js
+loadershim.js
+__mocks__/gatsby.js
