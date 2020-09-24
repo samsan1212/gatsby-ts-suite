@@ -19,7 +19,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     ```shell
     # create a new Gatsby site using this starter
-    gatsby new my-default-starter https://github.com/samsan1212/gatsby-styled-ts-starter
+    gatsby new my-default-starter https://github.com/samsan1212/gatsby-ts-suite
     ```
 
 2. **Start developing.**
