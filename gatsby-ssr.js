@@ -1,7 +1,24 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+import * as React from "react"
+import { Provider } from "react-redux"
 
-// You can delete this file if you're not using it
+import { ThemeProvider } from "styled-components"
+import theme from "./src/styled/styled-theme"
+import GlobalStyle from "./src/styled/global-style"
+
+import getStore from "./src/redux/store"
+
+const store = getStore()
+
+export const wrapRootElement = ({ element }) => {
+    return (
+        <ThemeProvider theme={theme}>
+            <Provider store={store}>
+                <>
+                    <GlobalStyle />
+                    {element}
+                </>
+            </Provider>
+        </ThemeProvider>
+    )
+}
