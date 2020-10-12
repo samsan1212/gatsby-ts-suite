@@ -1,11 +1,13 @@
 import { Link } from "gatsby";
 import React from "react";
 
+import type { PropsWithoutRef } from "react";
+
 interface Props {
   siteTitle?: string;
 }
 
-const Header: React.FC<Props> = ({ siteTitle = "" }) => (
+const Header: React.FC<Props> = ({ siteTitle = "" }: PropsWithoutRef<Props>) => (
   <header
     style={{
       background: `rebeccapurple`,

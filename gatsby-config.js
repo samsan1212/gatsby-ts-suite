@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Typescript Styled-components Starter`,
+    title: `Gatsby Typescript Suite Starter`,
     description: `A Gatsby starter for typescript and styled-components`,
     author: `Sam TS Chan`,
   },

@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import { toReducer } from "@/redux/helper";
+import { toReducer } from "redux-functions";
 
 import { SET_ACTION } from "@/redux/action/type/types";
 

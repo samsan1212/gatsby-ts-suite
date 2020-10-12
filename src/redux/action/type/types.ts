@@ -1,4 +1,4 @@
-import { toType } from "@/redux/helper";
+import { toType } from "redux-functions";
 
 const type = toType("");
 
