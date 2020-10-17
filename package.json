@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-styled-ts-starter",
+  "name": "gatsby-ts-suite",
   "private": true,
-  "description": "A Gatsby starter for typescript, styled-components, redux, redux-observable",
+  "description": "A Gatsby starter for Typescript, pre-installed with redux, jest",
   "version": "0.1.0",
   "author": "Sam TS Chan",
   "license": "MIT",
