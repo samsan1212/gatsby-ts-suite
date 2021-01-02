@@ -15,9 +15,13 @@ module.exports = {
     },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-eslint`,
-    `gatsby-plugin-typescript`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require("sass"),
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

@@ -5,7 +5,7 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
+    "react-app",
   ],
   parserOptions: {
     project: "tsconfig.json",
@@ -15,5 +15,9 @@ module.exports = {
     react: {
       version: "detect",
     },
+  },
+  rules: {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-use-before-define": ["warn", "nofunc"],
   },
 }
