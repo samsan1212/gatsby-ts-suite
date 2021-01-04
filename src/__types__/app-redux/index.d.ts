@@ -1,10 +1,9 @@
-import { Action } from "redux";
+import { Action } from "redux"
 
 // store state
-import { Store } from "./store";
+import { Store } from "./store"
 
 declare global {
-
   interface AppActionCreator<T> {
     (payload: T): AppAction<T>
   }
@@ -14,10 +13,8 @@ declare global {
   }
 
   interface AppAction<T = unknown> extends Action<string> {
-    payload: T;
+    payload: T
   }
 
   type ReduxStore = Readonly<Store>
-
 }
-

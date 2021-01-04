@@ -1,3 +1,3 @@
 export interface Store {
-    sample: number;
+  sample: number
 }

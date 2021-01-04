@@ -1,5 +1,5 @@
-import { toType } from "redux-functions";
+import { toType } from "redux-functions"
 
-const type = toType("");
+const type = toType("")
 
-export const SET_ACTION = type("SET_ACTION");
+export const SET_ACTION = type("SET_ACTION")

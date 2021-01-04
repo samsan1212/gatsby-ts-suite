@@ -1,9 +1,9 @@
-import { Epic } from "redux-observable";
+import { Epic } from "redux-observable"
 
 export interface PageStoreWithEpic {
-    epicMounted: boolean;
+  epicMounted: boolean
 }
 
 declare global {
-    type AppEpic<ActionPayload = any> = Epic<AppAction<ActionPayload>, any, ReduxStore, any>
+  type AppEpic<ActionPayload = any> = Epic<AppAction<ActionPayload>, any, ReduxStore, any>
 }

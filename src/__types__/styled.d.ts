@@ -1,8 +1,8 @@
-import 'styled-components'
+import "styled-components"
 
-declare module 'styled-components' {
-    export interface DefaultTheme {
-        // type anything to override style components
-        locals?: Record<string, unknown>
-    }
+declare module "styled-components" {
+  export interface DefaultTheme {
+    // type anything to override style components
+    locals?: Record<string, unknown>
+  }
 }

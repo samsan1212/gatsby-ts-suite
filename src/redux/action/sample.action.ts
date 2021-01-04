@@ -1,4 +1,4 @@
-import { toActionCreator } from "redux-functions";
-import { SET_ACTION } from "./type/types";
+import { toActionCreator } from "redux-functions"
+import { SET_ACTION } from "./type/types"
 
-export const setAction = toActionCreator<number>(SET_ACTION);
+export const setAction = toActionCreator<number>(SET_ACTION)
