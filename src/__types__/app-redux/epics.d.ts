@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Epic } from "redux-observable"
 
 export interface PageStoreWithEpic {
@@ -5,5 +6,10 @@ export interface PageStoreWithEpic {
 }
 
 declare global {
-  type AppEpic<ActionPayload = any> = Epic<AppAction<ActionPayload>, any, ReduxStore, any>
+  type AppEpic<ActionPayload = any> = Epic<
+    AppAction<ActionPayload>,
+    any,
+    ReduxStore,
+    any
+  >
 }

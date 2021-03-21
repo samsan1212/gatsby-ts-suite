@@ -1,8 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import rootEpic from "@/redux/epics"
 import rootReducer from "@/redux/reducers"
 import { applyMiddleware, compose, createStore } from "redux"
 import { createEpicMiddleware } from "redux-observable"
 import { composeWithDevTools } from "redux-devtools-extension"
+
+import type { AppAction } from "redux-functions"
 
 const getStore = () => {
   // epic setup

@@ -5,4 +5,3 @@ jest.config.js
 jest-preprocess.js
 loadershim.js
 __mocks__/gatsby.js
-gatsby-clean.js
