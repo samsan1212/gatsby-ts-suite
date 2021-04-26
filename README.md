@@ -1,8 +1,3 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
   Gatsby's typescript suite starter
 </h1>
@@ -51,6 +46,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── gatsby-browser.js
     ├── gatsby-config.js
     ├── gatsby-node.js
+    ├── gatsby-provider-wrapper.js
     ├── gatsby-ssr.js
     ├── LICENSE
     ├── package.json
@@ -73,27 +69,29 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 7. **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-8. **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+8. **`gatsby-provider-wrapper.js`**: This file is where all the 3rd party libraries initiate their wrappers, e.g. `redux`. These allow the setup of 3rd libraries when the webapp are loaded.
 
-9. **`LICENSE`**: Gatsby is licensed under the MIT license.
+9. **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+10. **`LICENSE`**: Gatsby is licensed under the MIT license.
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+11. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-12. **`postcss.config.js`**: This file is where `gatsby-plugin-postcss` expects to find the config to [post-process the CSS](https://www.gatsbyjs.org/packages/gatsby-plugin-postcss/).
+12. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-13. **`README.md`**: A text file containing useful reference information about your project.
+13. **`postcss.config.js`**: This file is where `gatsby-plugin-postcss` expects to find the config to [post-process the CSS](https://www.gatsbyjs.org/packages/gatsby-plugin-postcss/).
 
-14. **`tsconfig.json`**: This file is where **Typescript** transpiler expects to find the configurations of Typescript transpilation.
+14. **`README.md`**: A text file containing useful reference information about your project.
 
-15. **`tslint.json`**: This file is where **tslint** expects to find the rules of Typescript lint.
+15. **`tsconfig.json`**: This file is where **Typescript** transpiler expects to find the configurations of Typescript transpilation.
 
-16. **`yarn.lock`** (See `package.json` above, first). If you are using `yarn`, this is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+16. **`tslint.json`**: This file is where **tslint** expects to find the rules of Typescript lint.
+
+17. **`yarn.lock`** (See `package.json` above, first). If you are using `yarn`, this is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
 ## 🐱 To **Yarn** lover
 
-If you are going to use `yarn` instead of `npm`, please update the node script, **`start`**, in the `package.json`.
+If you are going to use `yarn` instead of `npm`, please modify the node script in the `package.json`.
 
 ## 🎓 Learning Gatsby
 
@@ -105,4 +103,4 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/samsan1212/gatsby-styled-ts-starter)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/samsan1212/gatsby-ts-suite)
